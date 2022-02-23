@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "cypress open"
+    "test": "cypress open",
+    "action": "node action.js"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
