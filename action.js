@@ -1,1 +1,1 @@
-console.log("Hello FAC 23!");
+console.log("Hello FAC 23! Run scripts on PRs 😊");
