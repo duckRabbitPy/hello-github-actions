@@ -1,11 +1,11 @@
-name: A workflow for my Hello World file
-on: push
+name: "PR Checks"
+on: [pull_request, push]
+
 jobs:
-  build:
-    name: Hello world action
+  check_pr:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./action-a
-        with:
-          MY_NAME: "Mona"
+    - uses: actions/checkout@v1
+    - name: "npm run test"
+      run: npm run test
+
